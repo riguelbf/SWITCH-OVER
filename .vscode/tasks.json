@@ -1,15 +1,22 @@
 {
-    "version": "0.1.0",
-    "command": "dotnet",
-    "isShellCommand": true,
-    "args": [],
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
     "tasks": [
         {
             "taskName": "build",
+            "command": "dotnet build",
+            "type": "shell",
             "args": [
-                "${workspaceRoot}/src/SWITCH_OVER.csproj"
+                "${workspaceRoot}/src/SWITCH_OVER.sln"
             ],
-            "isBuildCommand": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
         }
     ]
