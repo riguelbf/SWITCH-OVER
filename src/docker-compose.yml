@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  switch-over.api:
+    image: switch-over.api
+    build:
+      context: ./SWITCH-OVER.Api
+      dockerfile: Dockerfile

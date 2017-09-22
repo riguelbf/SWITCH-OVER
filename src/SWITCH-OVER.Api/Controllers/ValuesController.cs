@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace SWITCH_OVER.API.Controllers
+namespace SWITCH_OVER.Api.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller

@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace SWITCH_OVER.API
+namespace SWITCH_OVER.Api
 {
     public class Startup
     {

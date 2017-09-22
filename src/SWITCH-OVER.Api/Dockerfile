@@ -3,4 +3,4 @@ ARG source
 WORKDIR /app
 EXPOSE 80
 COPY ${source:-obj/Docker/publish} .
-ENTRYPOINT ["dotnet", "SWITCH_OVER.dll"]
+ENTRYPOINT ["dotnet", "SWITCH-OVER.Api.dll"]
