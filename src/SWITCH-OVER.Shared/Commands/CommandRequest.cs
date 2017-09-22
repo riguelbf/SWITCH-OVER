@@ -1,6 +1,6 @@
 ﻿namespace SWITCH_OVER.Shared.Commands
 {
-	public abstract class CommandRequest : ICommand
+	public abstract class CommandRequest : Command
 	{
 	}
 }

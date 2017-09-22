@@ -1,7 +1,10 @@
 ﻿namespace SWITCH_OVER.Shared.Entities
 {
-    public abstract class EntityBase
-    {
-	    protected int Id { get; set; }
-    }
+	/// <summary>
+	/// Abstract class responsible for aggregated type and responsible 
+	/// </summary>
+	public abstract class EntityBase<TIdentity>
+	{
+		protected TIdentity Id { get; set; }
+	}
 }

@@ -7,7 +7,7 @@ namespace SWITCH_OVER.Shared.Repository
 {
 	public interface IRepository<TEntity> : IDisposable where TEntity : IAggregateRoot
 	{
-		async void Add(TEntity entity);
+		void Add(TEntity entity);
 		TEntity GetById(Guid id);
 		IEnumerable<TEntity> GetAll();
 		void Update(TEntity entity);
