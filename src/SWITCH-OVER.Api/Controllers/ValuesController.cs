@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SWITCH_OVER.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values

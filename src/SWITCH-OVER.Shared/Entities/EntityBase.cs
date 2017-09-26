@@ -5,6 +5,9 @@
 	/// </summary>
 	public abstract class EntityBase<TIdentity>
 	{
+		/// <summary>
+		/// Primary key property
+		/// </summary>
 		protected TIdentity Id { get; set; }
 	}
 }

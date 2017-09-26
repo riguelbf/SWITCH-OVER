@@ -2,7 +2,7 @@
 
 namespace SWITCH_OVER.Shared.Commands
 {
-	public abstract class CommandQueryRequest : Command
+	public abstract class CommandCriteriaRequest : Command
 
 	{
 		public int OffSet { get; set; }
