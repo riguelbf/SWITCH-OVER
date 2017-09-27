@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
+using SWITCH_OVER.Crosscutting.Ioc;
 
 namespace SWITCH_OVER.Api
 {
@@ -51,6 +52,9 @@ namespace SWITCH_OVER.Api
 
 		        c.IncludeXmlComments(pathXmlDoc);
 	        });
+
+			// Register Dependency injection
+	        DependencyInjectionBootstrapper.RegisterServices(services);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
