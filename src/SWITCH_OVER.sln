@@ -29,6 +29,8 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWITCH_OVER.Crosscutting.Ioc", "..\SWITCH_OVER.Crosscutting.Ioc\SWITCH_OVER.Crosscutting.Ioc.csproj", "{5B3B5BF5-FDFF-4292-BDC0-1B53D9BB9998}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWITCH_OVER.Infrastructure.Services", "SWITCH_OVER.Infrastructure.Services\SWITCH_OVER.Infrastructure.Services.csproj", "{498F8689-9BDB-4270-8DC6-9B1C2FA77018}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{5B3B5BF5-FDFF-4292-BDC0-1B53D9BB9998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B3B5BF5-FDFF-4292-BDC0-1B53D9BB9998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B3B5BF5-FDFF-4292-BDC0-1B53D9BB9998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498F8689-9BDB-4270-8DC6-9B1C2FA77018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498F8689-9BDB-4270-8DC6-9B1C2FA77018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498F8689-9BDB-4270-8DC6-9B1C2FA77018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498F8689-9BDB-4270-8DC6-9B1C2FA77018}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{60EDD493-5DA8-48D1-B10E-A4FB06AF1718} = {4E60B91F-C02C-4FB6-81D6-039D593F6D97}
 		{2C3BB853-17BB-4603-8B32-12FFC263E667} = {4E78B4A3-4A8C-46B4-B374-64C1F65870B8}
 		{5B3B5BF5-FDFF-4292-BDC0-1B53D9BB9998} = {4E60B91F-C02C-4FB6-81D6-039D593F6D97}
+		{498F8689-9BDB-4270-8DC6-9B1C2FA77018} = {33BE0368-1772-4461-B89F-78620712A2A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {489D1660-02B4-4B48-AEC4-32EEDA251C39}
