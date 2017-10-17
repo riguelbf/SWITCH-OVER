@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace SWITCH_OVER.Infrastructure.Services.EventBus
 {
-	public class EventBusMQ : IEventBus, IDisposable
+	public class EventBusMQ //: IEventBus, IDisposable
 	{
 		private string _connectionString;
 		private string _brokerName;
@@ -43,23 +43,23 @@ namespace SWITCH_OVER.Infrastructure.Services.EventBus
 
 		public void Subscribe<TEvent>(IEventHandler<TEvent> handler, string queueName) where TEvent : Event
 		{
-			var eventName = typeof(TEvent).Name;
+			//var eventName = typeof(TEvent).Name;
 
-			if (_handlers.ContainsKey(eventName))
-			{
-				_handlers[eventName].Add(handler);
-			}
-			else
-			{
-				var channel = GetChannel();
-				channel.QueueBind(queue: _queueName,
-					exchange: _brokerName,
-					routingKey: eventName);
+			//if (_handlers.ContainsKey(eventName))
+			//{
+			//	_handlers[eventName].Add(handler);
+			//}
+			//else
+			//{
+			//	var channel = GetChannel();
+			//	channel.QueueBind(queue: _queueName,
+			//		exchange: _brokerName,
+			//		routingKey: eventName);
 
-				handlers.Add(eventName, new List<IEventHandler<TEvent>>());
-				handlers[eventName].Add(handler);
-				eventTypes.Add(typeof(T));
-			}
+			//	handlers.Add(eventName, new List<IEventHandler<TEvent>>());
+			//	handlers[eventName].Add(handler);
+			//	eventTypes.Add(typeof(T));
+			//}
 		}
 
 		public void Unsubscribe<TEvent>(IEventHandler<Event> handler) where TEvent : Event
