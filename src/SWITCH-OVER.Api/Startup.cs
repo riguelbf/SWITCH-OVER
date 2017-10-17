@@ -53,6 +53,7 @@ namespace SWITCH_OVER.Api
 		        c.IncludeXmlComments(pathXmlDoc);
 	        });
 
+
 			// Register Dependency injection
 	        DependencyInjectionBootstrapper.RegisterServices(services);
 		}

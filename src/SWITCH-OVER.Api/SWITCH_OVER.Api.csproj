@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SWITCH_OVER.Crosscutting.Ioc\SWITCH_OVER.Crosscutting.Ioc.csproj" />
+    <ProjectReference Include="..\SWITCH-OVER.Crosscutting.Ioc\SWITCH-OVER.Crosscutting.Ioc.csproj" />
   </ItemGroup>
 
 </Project>
