@@ -6,7 +6,7 @@ namespace SWITCH_OVER.Crosscutting.Ioc
     {
 	    public static void Register(IServiceCollection services)
 	    {
-
+			//
 	    }
 	}
 }
